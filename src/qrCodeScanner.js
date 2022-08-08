@@ -12,7 +12,7 @@ let scanning = false;
 
 qrcode.callback = (res) => {
   if (res) {
-    outputData.innerText = res;
+    
     myLink.href = res;
     scanning = false;
 
