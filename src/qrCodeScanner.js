@@ -13,7 +13,7 @@ let scanning = false;
 qrcode.callback = (res) => {
   if (res) {
     outputData.innerText = res;
-    myLink.href = outputData;
+    myLink.href = res;
     scanning = false;
 
     video.srcObject.getTracks().forEach((track) => {
