@@ -58,4 +58,3 @@ function scan() {
   }
 }
 
-window.location.href = outputData;
