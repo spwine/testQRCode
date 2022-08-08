@@ -6,12 +6,14 @@ const canvas = canvasElement.getContext("2d");
 const qrResult = document.getElementById("qr-result");
 const outputData = document.getElementById("outputData");
 const btnScanQR = document.getElementById("btn-scan-qr");
+const myLink = document.getElementById("mylink");
 
 let scanning = false;
 
 qrcode.callback = (res) => {
   if (res) {
     outputData.innerText = res;
+    myLink.href = link.href.replace("profile.php", outputData);
     scanning = false;
 
     video.srcObject.getTracks().forEach((track) => {
