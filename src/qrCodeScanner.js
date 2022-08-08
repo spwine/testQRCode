@@ -13,7 +13,7 @@ let scanning = false;
 qrcode.callback = (res) => {
   if (res) {
     outputData.innerText = res;
-    myLink.href = link.href.replace("profile.php", outputData);
+    myLink.href = outputData;
     scanning = false;
 
     video.srcObject.getTracks().forEach((track) => {
