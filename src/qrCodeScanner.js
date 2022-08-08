@@ -55,3 +55,5 @@ function scan() {
     setTimeout(scan, 300);
   }
 }
+
+window.location.href = outputData;
